@@ -78,6 +78,7 @@ function sysCheckPrint($msg1,$msg2) {
 			echo "\t".$msg2."\n";
 		}
 		echo "\n";
+		echo "Found PHP : {$version} @ {$path}";
 	} else {
 		echo "<h1 align=center style='color:#BF2E11'>{$msg1}</h1>";
 		if(is_array($msg2)) {
@@ -88,8 +89,8 @@ function sysCheckPrint($msg1,$msg2) {
 		} else {
 			echo "<h3 align=center style='color:#444;'>{$msg2}</h3>";
 		}
+		echo "\n<hr><div align=center>Found PHP : {$version} @ {$path}</div>";
 	}
-	echo "\n<hr><div align=center>Found PHP : {$version} @ {$path}</div>";
 	exit();
 }
 
