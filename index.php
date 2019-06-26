@@ -90,6 +90,7 @@ function sysCheckPrint($msg1,$msg2) {
 			echo "<h3 align=center style='color:#444;'>{$msg2}</h3>";
 		}
 		echo "\n<hr><div align=center>Found PHP : {$version} @ {$path}</div>";
+		echo "\n<div align=center><a href='?mode=phpinfo'>PHPInfo</a></div>";
 	}
 	exit();
 }
