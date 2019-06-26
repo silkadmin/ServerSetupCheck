@@ -12,6 +12,15 @@ if (!defined('PHP_VERSION_ID')) {
 		define('PHP_VERSION_ID', ($version[0] * 10000 + $version[1] * 100 + $version[2]));
 }
 
+if(isset($_REQUEST['mode'])) {
+        switch(strtolower($_REQUEST['mode'])) {
+                case "phpinfo":
+                        phpinfo();
+                        exit();
+                        break;
+        }
+}
+
 if(PHP_VERSION_ID < 50600) {
 	sysCheckPrint("PHP version 5.6 or above is required to run Logiks 4.0.","Please upgrade to continue.");
 }
